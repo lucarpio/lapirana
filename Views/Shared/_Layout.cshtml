@@ -23,6 +23,14 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" data-toggle="dropdown" href="#" role="button" aria-haspopup="true">Nosotros</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="QuienesSomos">Quienes Somos</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="serviciosproductos">Servicios y Productos</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="contacto">Contacto</a>
+                            </div>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
@@ -36,7 +44,6 @@
             @RenderBody()
         </main>
     </div>
-
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2020 - La Piraña S.A. - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>

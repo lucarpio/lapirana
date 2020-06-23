@@ -28,6 +28,21 @@ namespace Practica2.Controllers
             return View();
         }
 
+        public IActionResult QuienesSomos()
+        {
+            return View();
+        }
+        
+        public IActionResult ServiciosProductos()
+        {
+            return View();
+        }
+
+        public IActionResult Contacto()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
