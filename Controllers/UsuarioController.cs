@@ -1,15 +1,15 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace Practica2.Controllers
+namespace lapirana.Controllers
 {
-    public class VentaController
+    public class UsuarioController
     {
-        public class Venta : Controller
+        public class Usuario : Controller
         {
             public IActionResult Index()
             {
                 return View();
             }
-        } 
+        }
     }
 }
