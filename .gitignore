@@ -1,0 +1,6 @@
+# ignorando bin
+bin/
+
+# ignorando obj 
+
+obj/
