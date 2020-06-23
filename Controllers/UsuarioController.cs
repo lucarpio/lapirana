@@ -2,14 +2,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace lapirana.Controllers
 {
-    public class UsuarioController
+    public class UsuarioController : Controller
     {
-        public class Usuario : Controller
+        public IActionResult Index()
         {
-            public IActionResult Index()
-            {
-                return View();
-            }
+            return View();
         }
     }
 }
