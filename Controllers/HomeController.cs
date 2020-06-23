@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using lapirana.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Practica2.Models;
@@ -40,6 +41,12 @@ namespace Practica2.Controllers
 
         public IActionResult Contacto()
         {
+            return View();
+        }
+
+        public IActionResult ContactoCreate(Contacto objContacto)
+        {
+            objContacto.alerta = "Hola " + objContacto.nombre +" "+ objContacto.apellido + " su mensaje ha sido enviado con exito";
             return View();
         }
 
