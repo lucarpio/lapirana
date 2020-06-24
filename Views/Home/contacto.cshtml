@@ -1,3 +1,7 @@
+using System;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+
 @{
     ViewData["Title"] = "Contacto";
 }
@@ -24,4 +28,8 @@
         <input type="textarea" class="form-control" asp-for="mensaje">
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+</form>
+
+<div>
+    @Html.DisplayFor(mode1 => mode1.alerta)
+</div>
